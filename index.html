@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Îå×ÓÆå</title>
+	<title>äº”å­æ£‹</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
 	<style>
@@ -200,7 +200,7 @@
 				gridNum.innerHTML = lineNum;
 			}
 
-			//ÆåÅÌ³õÊ¼»¯
+			//æ£‹ç›˜åˆå§‹åŒ–
 			submitBtn.onclick = function(){
 				var chessMaxNum = lineNum * lineNum;
 				var chessWH = 90/lineNum;
@@ -221,7 +221,7 @@
 				mask.style.display = 'none';
 			}
 
-			//Æå×Ó¶ÔÏó
+			//æ£‹å­å¯¹è±¡
 			function Chess(){
 				this.color = 'white';
 				this.site = 0;
@@ -238,8 +238,8 @@
 						return (s.color == 'black')?parseInt(s.site):0;
 					});
 
-					judge(whiteChess,'°××Ó');
-					judge(blackChess,'ºÚ×Ó');
+					judge(whiteChess,'ç™½å­');
+					judge(blackChess,'é»‘å­');
 
 					function judge(che,color){
 						for (var i = 0;i < che.length;i++) {
@@ -247,28 +247,28 @@
 							var y = parseInt(che[i]/lineNum);
 							if ( x <= lineNum - 5 && y <= lineNum - 5 && che[i] != 0 ) {
 								if( che[i+1*lineNum+1] != 0 && che[i+2*lineNum+2] != 0 && che[i+3*lineNum+3] != 0 && che[i+4*lineNum+4] != 0 ){
-									alert(color+'»ñÊ¤!');
+									alert(color+'è·èƒœ!');
 									location.replace(location);
 									return true;
 								}
 							};
 							if ( y <= lineNum - 5 && che[i] != 0 ) {
 								if( che[i+1*lineNum] != 0 && che[i+2*lineNum] != 0 && che[i+3*lineNum] != 0 && che[i+4*lineNum] != 0 ){
-									alert(color+'»ñÊ¤!');
+									alert(color+'è·èƒœ!');
 									location.replace(location);
 									return true;
 								}
 							};
 							if ( x >= 4 && y <= lineNum - 5 && che[i] != 0 ) {
 								if( che[i+1*lineNum-1] != 0 && che[i+2*lineNum-2] != 0 && che[i+3*lineNum-3] != 0 && che[i+4*lineNum-4] != 0 ){
-									alert(color+'»ñÊ¤!');
+									alert(color+'è·èƒœ!');
 									location.replace(location);
 									return true;
 								}
 							};
 							if ( x <= lineNum - 5 && che[i] != 0 ) {
 								if( che[i+1] != 0 && che[i+2] != 0 && che[i+3] != 0 && che[i+4] != 0 ){
-									alert(color+'»ñÊ¤!');
+									alert(color+'è·èƒœ!');
 									location.replace(location);
 									return true;
 								}
@@ -287,7 +287,7 @@
 					chessBox[i].appendChild(chessArr[i].chessDom());
 					chessArr[i].ligature(chessArr);
 				}else{
-					alert('´Ë´¦ÓĞ×Ó!');
+					alert('æ­¤å¤„æœ‰å­!');
 				}
 			}
 			
@@ -299,15 +299,15 @@
 	</section>
 	<section id="mask">
 		<aside class="conBox">
-			<h1 class="borderBot">ÇëÑ¡ÔñÆåÅÌ¹æ¸ñ£¡</h1>
+			<h1 class="borderBot">è¯·é€‰æ‹©æ£‹ç›˜è§„æ ¼ï¼</h1>
 			<p id="subBtn" class="border">-</p>
 			<p id="gridNum" value="10" class="borderTop borderBot">10</p>
 			<p id="addBtn" class="border">+</p>
-			<button id="submitBtn">È·ÈÏ</button>
+			<button id="submitBtn">ç¡®è®¤</button>
 		</aside>
 	</section>
 	<div style="text-align:center;">
-<p><a href="" target="_blank">³ÂÒİĞùÖÆ×÷</a></p>
+<p><a href="" target="_blank">é™ˆé€¸è½©åˆ¶ä½œ</a></p>
 </div>
 
 <center><script type="text/javascript"> (function() { var s = "_" + Math.random().toString(36).slice(2); document.write('<div style="" id="' + s + '"></div>'); (window.slotbydup = window.slotbydup || []).push({ id: "u4923786", container:  s }); })(); </script><script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js" async="async" defer="defer" ></script></center>
